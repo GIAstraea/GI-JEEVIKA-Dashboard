@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GI JEEVIKA Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GI JEEVIKA Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#status">Product Status</a></li>
+                <li><a href="#supply">Supply of Materials</a></li>
+                <li><a href="#stock">Stock</a></li>
+                <li><a href="#sales">Sales</a></li>
+                <li><a href="#management">Management</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="status">
+            <h2>Product Status</h2>
+            <button onclick="showData('status-data')">View Product Status</button>
+            <div id="status-data" class="hidden">
+                <p>Product 1: In Production</p>
+                <p>Product 2: Ready for Shipment</p>
+                <p>Product 3: Out of Stock</p>
+            </div>
+        </section>
+
+        <section id="supply">
+            <h2>Supply of Materials</h2>
+            <button onclick="showData('supply-data')">View Supply Status</button>
+            <div id="supply-data" class="hidden">
+                <p>Material 1: 100 units available</p>
+                <p>Material 2: 50 units on order</p>
+                <p>Material 3: 200 units in stock</p>
+            </div>
+        </section>
+
+        <section id="stock">
+            <h2>Stock</h2>
+            <button onclick="showData('stock-data')">View Stock</button>
+            <div id="stock-data" class="hidden">
+                <p>Product 1: 20 units</p>
+                <p>Product 2: 15 units</p>
+                <p>Product 3: 0 units</p>
+            </div>
+        </section>
+
+        <section id="sales">
+            <h2>Sales</h2>
+            <button onclick="showData('sales-data')">View Sales</button>
+            <div id="sales-data" class="hidden">
+                <p>Product 1: 150 units sold</p>
+                <p>Product 2: 100 units sold</p>
+                <p>Product 3: 75 units sold</p>
+            </div>
+        </section>
+
+        <section id="management">
+            <h2>Management</h2>
+            <p>Other management tools and information.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GI JEEVIKA</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
